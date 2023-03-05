@@ -15,7 +15,7 @@ and push to your github repository.
 .  Because this recurrence is leaf-dominated, the upper bound of the function is $O(n^{\log_3 2})$
 
   * $W(n)=5W(n/4)+n$
-.  By the observation presented in notes, since this is leaf dominated, the cost is $On^{\log_4 5}$
+.  By the observation presented in notes, since this is leaf dominated, the cost is $O(n^{\log_4 5})$
 
   * $W(n)=7W(n/7)+n$
 .  This is balanced, therefore the asympototic upper bound is $O(n\log n)$.
