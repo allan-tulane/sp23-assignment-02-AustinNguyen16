@@ -27,7 +27,7 @@ and push to your github repository.
 .  This function is root dominated, therefore the upper bound is $O(n^3)$
 
   * $W(n)=49W(n/25)+n^{3/2}\log n$
-.  This function is root dominated, therefore the upper bound is $O(n^{3/2]\log n)$
+.  This function is root dominated, therefore the upper bound is $O(n^{3/2}\log n)$
 
   * $W(n)=W(n-1)+2$
 .  This function is root dominated, as when you take the first level of the recurrance, it is infact less the root, therefore the upper bound is $O(1)$.
