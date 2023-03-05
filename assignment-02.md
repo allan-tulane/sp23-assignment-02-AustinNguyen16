@@ -12,55 +12,31 @@ and push to your github repository.
 
 1. Derive asymptotic upper bounds of work for each recurrence below.
   * $W(n)=2W(n/3)+1$
-.  Because this recurrence is leaf-bounded, the upper bound of the function is $O(n^{\log_3 2}$
-.  
-.  
-.  
-.  
-  * $W(n)=5W(n/4)+n$
-.  
-.  
-.  
-.  
-.  
-  * $W(n)=7W(n/7)+n$
-.  
-.  
-.  
-.  
-.  
-  * $W(n)=9W(n/3)+n^2$
-.  
-.  
-.  
-.  
-.  
-  * $W(n)=8W(n/2)+n^3$
-.  
-.  
-.  
-.  
-.  
-  * $W(n)=49W(n/25)+n^{3/2}\log n$
-.  
-.  
-.  
-.  
-.  
-  * $W(n)=W(n-1)+2$
-.  
-.  
-.  
-.  
-.  
-  * $W(n)= W(n-1)+n^c$, with $c\geq 1$
-.  
-.  
-.  
-.  
-.  
-  * $W(n)=W(\sqrt{n})+1$
+.  Because this recurrence is leaf-dominated, the upper bound of the function is $O(n^{\log_3 2})$
 
+  * $W(n)=5W(n/4)+n$
+.  By the observation presented in notes, since this is leaf dominated, the cost is $On^{\log_4 5}$
+
+  * $W(n)=7W(n/7)+n$
+.  This is balanced, therefore the asympototic upper bound is $O(n\logn)$.
+
+  * $W(n)=9W(n/3)+n^2$
+.  This function is root dominated, therefore the upper bound is $O(n^2)$.
+
+  * $W(n)=8W(n/2)+n^3$
+.  This function is root dominated, therefore the upper bound is $O(n^3)$
+
+  * $W(n)=49W(n/25)+n^{3/2}\log n$
+.  This function is root dominated, therefore the upper bound is $O(n^{3/2]\log n)$
+
+  * $W(n)=W(n-1)+2$
+.  This function is root dominated, as when you take the first level of the recurrance, it is infact less the root, therefore the upper bound is $O(1)$.
+
+  * $W(n)= W(n-1)+n^c$, with $c\geq 1$
+.  Since $c\geq 1$, the function is root dominated, therefore the upper bound is $O(n^c)$, with $c\geq 1$.
+
+  * $W(n)=W(\sqrt{n})+1$
+.  Since the function is root dominated, the cost is bounded by 1, $O(1)$.
 
 2. Suppose that for a given task you are choosing between the following three algorithms:
 
