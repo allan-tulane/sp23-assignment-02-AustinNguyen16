@@ -67,7 +67,7 @@ with the work being denoted as follows:
 *B. $O(1)$ \\
 *C. $O(n^2)$ \\
 
-Therefore, I would choose algorithm 1.
+Therefore, I would choose algorithm B.
 
 
 3. Now that you have some practice solving recurrences, let's work on
