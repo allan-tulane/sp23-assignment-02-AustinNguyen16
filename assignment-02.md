@@ -18,7 +18,7 @@ and push to your github repository.
 .  By the observation presented in notes, since this is leaf dominated, the cost is $On^{\log_4 5}$
 
   * $W(n)=7W(n/7)+n$
-.  This is balanced, therefore the asympototic upper bound is $O(n\logn)$.
+.  This is balanced, therefore the asympototic upper bound is $O(n\log n)$.
 
   * $W(n)=9W(n/3)+n^2$
 .  This function is root dominated, therefore the upper bound is $O(n^2)$.
