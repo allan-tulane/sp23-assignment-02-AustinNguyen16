@@ -57,15 +57,15 @@ and push to your github repository.
     Which algorithm would you choose?
 
 
-First, the algorithms would be denoted as follows:\\
-A. $W(n) = 5W(n/2) + n$ \\
-B. $W(n) = 2W(n-1) + 1$ \\ 
-C. $W(n) = 9W(n/3) + n^2$ \\
+First, the algorithms would be denoted as follows:
+.A. $W(n) = 5W(n/2) + n$ 
+.B. $W(n) = 2W(n-1) + 1$ 
+.C. $W(n) = 9W(n/3) + n^2$ 
 
-with the work being denoted as follows:\\
-A. $O(n^{\log 2 5}$ \\ 
-B. $O(1)$ \\
-C. $O(n^2)$ \\
+with the work being denoted as follows:
+.A. $O(n^{\log 2 5}$ \\ 
+.B. $O(1)$ \\
+.C. $O(n^2)$ \\
 
 Therefore, I would choose algorithm 1.
 
