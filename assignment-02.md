@@ -1,6 +1,6 @@
 # CMPS 2200 Assignment 2
 
-**Name:**_________________________
+**Name:** Austin Nguyen
 
 In this assignment we'll work on applying the methods we've learned to analyze recurrences, and also see their behavior
 in practice. As with previous
@@ -12,7 +12,7 @@ and push to your github repository.
 
 1. Derive asymptotic upper bounds of work for each recurrence below.
   * $W(n)=2W(n/3)+1$
-.  
+.  Because this recurrence is leaf-bounded, the upper bound of the function is $O(n^{\log_3 2}$
 .  
 .  
 .  
