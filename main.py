@@ -1,7 +1,10 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
 """
 CMPS 2200  Assignment 2.
 See assignment-02.pdf for details.
 """
+
 import time
 
 class BinaryNumber:
@@ -46,10 +49,20 @@ def pad(x,y):
 
 
 def subquadratic_multiply(x, y):
-    ### TODO
-    pass
+    return _subquadratic_multiply(x, y)
     ###
-
+    
+def _subquadratic_multiply(x, y):
+    xvec, yvec = pad(x.binary_vec, y.binary_vec)
+    if (x.decimal_val & y.decimal_val <= 1):
+        return BinaryNumber(x.decimal_val * y.decimal_val)
+    else:
+        x_left, x_right = split_number(xvec)
+        y_left, y_right = split_number(yvec)
+        val1 = bit_shift(_subquadratic_multiply(x_left, y_left), len(xvec))
+        val2 = bit_shift((BinaryNumber((_subquadratic_multiply(x_left, y_right)).decimal_val + (_subquadratic_multiply(x_right,y_left)).decimal_val)),len(xvec)//2) 
+        val3 = _subquadratic_multiply(x_right, y_right)
+        return val1.decimal_val + val2.decimal_val + val3.decimal_val
 ## Feel free to add your own tests here.
 def test_multiply():
     assert subquadratic_multiply(BinaryNumber(2), BinaryNumber(2)) == 2*2
@@ -59,6 +72,4 @@ def time_multiply(x, y, f):
     # multiply two numbers x, y using function f
     return (time.time() - start)*1000
 
-    
-    
 
