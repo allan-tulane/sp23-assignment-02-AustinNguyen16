@@ -36,7 +36,7 @@ and push to your github repository.
 .  Since $c\geq 1$, the function is root dominated, therefore the upper bound is $O(n^c)$, with $c\geq 1$.
 
   * $W(n)=W(\sqrt{n})+1$
-.  Since the function is root dominated, the cost is bounded by 1, $O(1)$.
+.  Since the function is balanced dominated, therefore hte bound is, $O(\log \log n)$.
 
 2. Suppose that for a given task you are choosing between the following three algorithms:
 
